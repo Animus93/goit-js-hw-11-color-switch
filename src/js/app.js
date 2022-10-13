@@ -15,8 +15,8 @@ const interval ={
             this.onStopSwitchColor();
         };
         let currentID = setInterval(() => {
-            let sum = ArrayOfColors[randomIntegerFromInterval(0,ArrayOfColors.length-1)];
-            refs.bodyRef.style.backgroundColor = sum;
+            let currentColor = ArrayOfColors[randomIntegerFromInterval(0,ArrayOfColors.length-1)];
+            refs.bodyRef.style.backgroundColor = currentColor;
         }, value((Number(refs.inputRef.value) * 1000)));
         return this.ID = currentID;
     },
