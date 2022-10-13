@@ -1,3 +1,4 @@
+"use strict";
 import ArrayOfColors from "./source.js";
 
 const refs = {
@@ -11,10 +12,9 @@ const interval ={
     ID: null,
     onStartSwitchColor() {
         if(this.ID){
-            onStopSwitchColor();
+            this.onStopSwitchColor();
         };
-        currentID = setInterval(() => {
-            console.log('switch')
+        let currentID = setInterval(() => {
             let sum = ArrayOfColors[randomIntegerFromInterval(0,ArrayOfColors.length-1)];
             refs.bodyRef.style.backgroundColor = sum;
         }, value((Number(refs.inputRef.value) * 1000)));
