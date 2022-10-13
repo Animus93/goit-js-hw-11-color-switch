@@ -11,8 +11,7 @@ const interval ={
     ID: null,
     onStartSwitchColor() {
         if(this.ID){
-            clearInterval(this.ID);
-            this.ID = null;
+            return;
         };
         currentID = setInterval(() => {
             console.log('switch')
