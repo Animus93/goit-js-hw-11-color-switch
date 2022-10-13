@@ -18,6 +18,7 @@
     "url": "https://github.com/Animus93/goit-js-hw-11-color-switch/issues"
   },
   "dependencies": {
+    "@parcel/transformer-typescript-tsc": "^2.7.0",
     "modern-normalize": "^1.1.0"
   },
   "devDependencies": {
